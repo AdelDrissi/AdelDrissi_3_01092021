@@ -1,0 +1,11 @@
+{
+  "name": "adeldrissi_3_01092021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "./sass/main.scss:./public/css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
