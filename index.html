@@ -3,20 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-
     <title>ohmyfood</title>
-    <meta name="title" content="Accueil-ohmyfood!" />
     <meta
       name="description"
       content="Ohmyfood,entreprise proposant des commandes de repas gastronomiques en ligne permettant a de nombreux utilisateurs de choisirs le menu qui leur plait"
     />
-
-    <script src="https://use.fontawesome.com/db58593160.js"></script>
-    <link type="text/css" rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/551ce15b23.js"
+      crossorigin="anonymous"
+    ></script>
+    <link type="text/css" rel="stylesheet" href="public/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <header>
-    <h1 class="h1-title">Ohmyfood</h1>
-  </header>
-  <body></body>
+
+  <body>
+    <header class="header">
+      <h1 class="logo-header">
+        <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" />
+      </h1>
+    </header>
+
+    <!--LOADER-->
+    <div></div>
+
+    <main class="main">
+      <!--SECTION LOCALISATION-->
+      <div class="city-local">
+        <span><i class="fas fa-map-marker-alt"></i></span>
+        <span class="map-search"
+          ><input
+            class="text-city"
+            type="search "
+            id="ville "
+            name="ville "
+            value="Paris, Belleville "
+            placeholder="votre ville "
+        /></span>
+        </div>
+      <!--SECTION EXPLORE-->
+      <div class="explore-restaurant">
+        <h2 class="réserve-menu"><strong>Réservez le menu qui vous convient</strong></h2>
+        <p class="exceptional-restaurant">Découvrez des restaurant d'exceptions séléctionnés par nos soins.</p>
+      </div>
+        
+    
+      </div>
+    </main>
+  </body>
 </html>
