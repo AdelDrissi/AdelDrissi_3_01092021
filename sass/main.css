@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body {
   font-family: "roboto";
@@ -27,6 +28,7 @@ body {
   text-align: center;
   margin-top: 40px;
 }
+
 .exceptional-restaurant {
   color: #9b9b9b;
 }
@@ -34,6 +36,7 @@ body {
 .réserve-menu {
   padding: 10px;
 }
+
 .map-search {
   margin-right: -30px;
-}
+}/*# sourceMappingURL=main.css.map */
