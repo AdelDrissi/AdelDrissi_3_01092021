@@ -1,5 +1,44 @@
-.h1-title {
+@charset "UTF-8";
+html,
+body {
+  font-family: "roboto";
+}
+
+.logo-header {
   text-align: center;
+}
+
+.city-local {
+  justify-content: center;
+  background-color: #dcdcdc;
+  display: flex;
+  padding-left: 3%;
+  height: 40px;
+  align-items: center;
+  box-shadow: inset 0px 3px 3px 0px #c0c0c0;
+}
+
+.text-city {
+  background-color: #dcdcdc;
+  border: none;
+  margin: 10px;
+}
+
+.explore-restaurant {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.exceptional-restaurant {
+  color: #9b9b9b;
+}
+
+.réserve-menu {
+  padding: 10px;
+}
+
+.map-search {
+  margin-right: -30px;
 }
 
 /*# sourceMappingURL=style.css.map */
