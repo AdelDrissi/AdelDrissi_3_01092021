@@ -3,35 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <title>ohmyfood</title>
     <meta
       name="description"
       content="Ohmyfood,entreprise proposant des commandes de repas gastronomiques en ligne permettant a de nombreux utilisateurs de choisirs le menu qui leur plait"
     />
-    <script
+  <script
       src="https://kit.fontawesome.com/551ce15b23.js"
       crossorigin="anonymous"
     ></script>
-    <link type="text/css" rel="stylesheet" href="public/css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="public/css/style.css" />
   </head>
 
   <body>
+
+    <!--LOADER-->
+    <div>
+
+    </div>
+
     <header class="header">
       <h1 class="logo-header">
         <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" />
       </h1>
     </header>
 
-    <!--LOADER-->
-    <div></div>
-
+  
+    <!--SECTION LOCALISATION-->
     <main class="main">
-      <!--SECTION LOCALISATION-->
       <div class="city-local">
         <span><i class="fas fa-map-marker-alt"></i></span>
         <span class="map-search"
@@ -43,14 +47,60 @@
             value="Paris, Belleville "
             placeholder="votre ville "
         /></span>
-        </div>
+      </div>
+
       <!--SECTION EXPLORE-->
       <div class="explore-restaurant">
-        <h2 class="réserve-menu"><strong>Réservez le menu qui vous convient</strong></h2>
-        <p class="exceptional-restaurant">Découvrez des restaurant d'exceptions séléctionnés par nos soins.</p>
+        <h2 class="réserve-menu">
+          <strong>Réservez le menu qui vous convient</strong>
+        </h2>
+        <p class="exceptional-restaurant">
+          Découvrez des restaurant d'exceptions séléctionnés par nos soins.
+        </p>
+        <span class="btn-explore">
+          <a href="#">
+          <button>Explorer nos restaurant</button>
+          </a>
+        </span>
       </div>
-        
-      </div>
+
+      <!--SECTION 1-->
+
+        <section class="functionality">
+        <h2>
+          <strong>Fonctionnement</strong>
+        </h2>
+        <ul class="listing-number">
+            <li>
+          <span class="listing-functionality">1</span>
+          <span class="fas fa-mobile-alt"></i></span>
+          <p>Choisissez votre restaurant</p>
+          </li>
+          <li>
+          
+          <span class="listing-functionality">2</span>
+          <span class="fas fa-list-ul"></i></span>
+          <p>Composer votre menu</p>
+          </li>
+          <li>
+          
+          <span class="listing-functionality">3</span>
+          <span class="fas fa-store"></i></span>
+            <p>Dèguster au restaurant</p>
+            </li>
+            </ul>
+          </section>
+
+          <!--SECTION 2-->
+
+          <section class="Restaurant">
+            <h2>
+              <strong>Restaurant</strong>
+            </h2>
+            <div class="menu-number-one"><a href="./maquettes/Menu - La palette du goût.png"></a>
+
+          </section>
+
     </main>
   </body>
 </html>
