@@ -1,10 +1,14 @@
 @import "./_Utils/variables", "./_Utils/mixins", "./_Utils/maps";
+@import "./_layouts/header", "./_layouts/exploration",
+  "./_layouts/fonctionnement", "./_layouts/restaurant", "./_layouts/footer",
+  "./_layouts/menus";
 
 html,
 body {
   font-family: "roboto";
 }
 /*HEADER*/
+
 .logo-header {
   text-align: center;
   font-size: 20px;
@@ -69,6 +73,10 @@ body {
 }
 .exceptional-restaurant {
   color: #9b9b9b;
+}
+
+.btn-exploration {
+  font-size: medium;
 }
 
 .listing-number {
@@ -137,10 +145,10 @@ li {
 /*SECTION2*/
 
 .Card_image {
-  width: 90%;
+  width: 95%;
   height: 185px;
   object-fit: cover;
-  margin: 25px;
+  padding: 4%;
   border-radius: 10px 10px 0 0;
 }
 
