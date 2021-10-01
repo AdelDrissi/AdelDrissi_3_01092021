@@ -4,6 +4,10 @@
   "./_layouts/menus";
 @import "./_composants/btn-exploration", "./_composants/btn-fiche",
   "./_composants/heart", "./_composants/loader", "./_composants/map";
+@font-face {
+  font-family: roboto;
+  src: url(./_Police/Base/Roboto/Roboto-Regular.ttf);
+}
 
 html,
 body {

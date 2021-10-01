@@ -380,6 +380,12 @@ a:visited {
   margin: 20px;
   border-radius: 20px;
   padding-top: 1px;
+  box-shadow: 5px 5px 5px 1px #c0c0c0;
+}
+
+.dish h4 {
+  margin: 0;
+  padding-top: 10px;
 }
 
 .entree-garnish-and-price {
