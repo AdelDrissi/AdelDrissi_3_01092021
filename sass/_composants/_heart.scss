@@ -1,0 +1,16 @@
+.plein:hover {
+  animation: coeur_plein 200ms ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: $linear-gradient;
+  background: -webkit-linear-gradient(
+    to left,
+    #9356dc,
+    #b35cdc,
+    #cf64dc,
+    #e86edb,
+    #ff79da
+  );
+  -webkit-text-fill-color: #9356dc;
+  font-weight: bold;
+}
