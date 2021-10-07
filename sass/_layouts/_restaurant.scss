@@ -4,6 +4,15 @@
   margin-top: 2%;
 }
 
+.card figcaption {
+  & .fa-heart {
+    position: relative;
+    color: black;
+    left: 90%;
+    bottom: 15px;
+  }
+}
+
 .card {
   &:hover {
     transform: scale(1);
