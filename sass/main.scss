@@ -269,6 +269,10 @@ li {
   margin: 10px;
 }
 
+.entree-garnish-price {
+  margin-right: 40px;
+}
+
 .card {
   height: 94%;
   box-shadow: 0 0 16px;
@@ -298,6 +302,60 @@ li {
   );
   -webkit-text-fill-color: #cf64dc;
   font-weight: bold;
+}
+
+.check-right {
+  transition: transform 330ms ease-in-out;
+  position: absolute;
+  left: 103%;
+  align-items: center;
+  margin-top: -80px;
+  display: flex;
+  justify-content: center;
+  background-color: #99e2d0;
+  color: white;
+  width: 52px;
+  height: 100px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.check-right {
+  -webkit-animation-name: fadeInRight;
+  animation-name: check-right;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes check-right {
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(-35px);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(-100px);
+  }
+}
+
+.fa-check-circle {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fa-check-circle;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fa-check-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*FOOTER*/
@@ -408,6 +466,11 @@ a:visited {
   .full-menus {
     display: flex;
     flex-direction: column;
+  }
+
+  .check-right {
+    position: absolute;
+    left: 106%;
   }
 
   .listing-number {
