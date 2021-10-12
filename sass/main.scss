@@ -319,6 +319,21 @@ li {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+.check-right {
+  transition: transform 330ms ease-in-out;
+  position: absolute;
+  left: 102%;
+  align-items: center;
+  margin-top: -80px;
+  display: flex;
+  justify-content: center;
+  background-color: #99e2d0;
+  color: white;
+  width: 55px;
+  height: 100px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
 
 .check-right {
   -webkit-animation-name: fadeInRight;
@@ -356,6 +371,11 @@ li {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.dish:hover .check-right {
+  opacity: 1;
+  transform: translate(-50px);
 }
 
 /*FOOTER*/
@@ -468,17 +488,15 @@ a:visited {
     flex-direction: column;
   }
 
-  .check-right {
-    position: absolute;
-    left: 106%;
-  }
-
   .listing-number {
     display: flex;
     flex-direction: column;
     width: 900px;
     padding: 20px 0 20px;
     margin-left: 25%;
+  }
+  .check-right {
+    margin-left: 15px;
   }
 
   .Restaurant-list {
@@ -491,6 +509,5 @@ a:visited {
 @media screen and (max-width: 1440px) {
   .full-menus {
     display: flex;
-    flex-direction: column;
   }
 }
