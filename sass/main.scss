@@ -219,6 +219,127 @@ li {
 
 /*SECTION2*/
 
+.dish {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 1px #c0c0c0;
+  cursor: pointer;
+  height: 6rem;
+  display: flex;
+  margin: 38px;
+  padding: 20px;
+  &:hover .check-right {
+    margin-right: 0;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+  }
+  &:hover i {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+  }
+  .entree,
+  .maindish-menus,
+  .dessert-menus {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    .entree-desc {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      > * {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 100%;
+      }
+    }
+
+    .entree-price {
+      display: flex;
+      align-items: flex-end;
+      max-width: 100%;
+    }
+  }
+  .check-right {
+    width: 5rem;
+    background-color: #99e2d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    margin-right: -20px;
+    margin-top: -20px;
+    height: 136px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    > i {
+      color: #99e2d0;
+      background: white;
+      transition-duration: 0.5s;
+      border-radius: 50%;
+    }
+  }
+}
+
+.maindish-price,
+.dessert-price,
+.entree-price {
+  padding: 20px;
+}
+
+.dish h4 {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.title-dish {
+  border-bottom: 2px solid #99e2d0;
+  width: 40px;
+  margin-left: 20px;
+}
+
+@keyframes fadeInAnimation {
+  10% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn_explore button {
+  background-image: linear-gradient(
+    to left,
+    #9356dc,
+    #b35cdc,
+    #cf64dc,
+    #e86edb,
+    #ff79da
+  );
+  color: white;
+  margin-left: 40%;
+  font-weight: 700;
+  padding: 12px 20px;
+  border: none;
+  transform: scale(1);
+  transition: transform 400ms;
+  box-shadow: inset 0px 0px 1px 0px #c0c0c0;
+  border-radius: 20px;
+}
+
+.btn_explore button:hover {
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
+  box-shadow: 4px 4px 6px #9b9b9b;
+  transform: scale(1.3);
+}
+
 .Card_image {
   width: 100%;
   height: 170px;
@@ -227,6 +348,10 @@ li {
   padding-top: 0;
   border-radius: 12px 12px 0 0;
   padding-left: 0;
+}
+.full-menus {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .Restaurant {
@@ -269,10 +394,6 @@ li {
   margin: 10px;
 }
 
-.entree-garnish-price {
-  margin-right: 40px;
-}
-
 .card {
   height: 94%;
   box-shadow: 0 0 16px;
@@ -302,80 +423,6 @@ li {
   );
   -webkit-text-fill-color: #cf64dc;
   font-weight: bold;
-}
-
-.check-right {
-  transition: transform 330ms ease-in-out;
-  position: absolute;
-  left: 103%;
-  align-items: center;
-  margin-top: -80px;
-  display: flex;
-  justify-content: center;
-  background-color: #99e2d0;
-  color: white;
-  width: 52px;
-  height: 100px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-.check-right {
-  transition: transform 330ms ease-in-out;
-  position: absolute;
-  left: 102%;
-  align-items: center;
-  margin-top: -80px;
-  display: flex;
-  justify-content: center;
-  background-color: #99e2d0;
-  color: white;
-  width: 55px;
-  height: 100px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-.check-right {
-  -webkit-animation-name: fadeInRight;
-  animation-name: check-right;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@keyframes check-right {
-  50% {
-    -webkit-transform: translateX(0);
-    transform: translateX(-35px);
-  }
-  100% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(-100px);
-  }
-}
-
-.fa-check-circle {
-  -webkit-animation-name: fadeInRight;
-  animation-name: fa-check-circle;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@keyframes fa-check-circle {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.dish:hover .check-right {
-  opacity: 1;
-  transform: translate(-50px);
 }
 
 /*FOOTER*/
@@ -409,85 +456,7 @@ a:visited {
   padding: 25px;
 }
 
-.dish {
-  background-color: white;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 20px;
-  padding-top: 1px;
-  box-shadow: 5px 5px 5px 1px #c0c0c0;
-}
-
-.dish h4 {
-  margin: 0;
-  padding-top: 10px;
-}
-
-.entree-garnish-and-price {
-  display: flex;
-  justify-content: space-between;
-}
-
-.title-dish {
-  border-bottom: 2px solid #99e2d0;
-  width: 40px;
-  margin-left: 20px;
-}
-
-.full-menus {
-  display: flex;
-  justify-content: space-around;
-}
-
-@keyframes fadeInAnimation {
-  10% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.btn_explore button {
-  background-image: linear-gradient(
-    to left,
-    #9356dc,
-    #b35cdc,
-    #cf64dc,
-    #e86edb,
-    #ff79da
-  );
-  color: white;
-  margin-left: 40%;
-  font-weight: 700;
-  padding: 12px 20px;
-  border: none;
-  transform: scale(1);
-  transition: transform 400ms;
-  box-shadow: inset 0px 0px 1px 0px #c0c0c0;
-  border-radius: 20px;
-}
-
-.btn_explore button:hover {
-  background-color: #ae80e5;
-  background-blend-mode: lighten;
-  box-shadow: 4px 4px 6px #9b9b9b;
-  transform: scale(1.3);
-}
-
-/*MÉDIAS-QUERIES*/
-
-@media screen and (max-width: 760px) {
-  .Cards {
-    display: flex;
-    flex-direction: column;
-  }
-  .full-menus {
-    display: flex;
-    flex-direction: column;
-  }
-
+@media screen and (max-width: 960px) {
   .listing-number {
     display: flex;
     flex-direction: column;
@@ -497,6 +466,18 @@ a:visited {
   }
   .check-right {
     margin-left: 15px;
+  }
+  .dessert-price {
+    padding-left: 120px;
+  }
+
+  .maindish-price {
+    padding-left: 40px;
+  }
+
+  .full-menus {
+    display: flex;
+    flex-direction: column;
   }
 
   .Restaurant-list {
@@ -508,6 +489,9 @@ a:visited {
 
 @media screen and (max-width: 1440px) {
   .full-menus {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    row-gap: 1rem;
   }
 }
