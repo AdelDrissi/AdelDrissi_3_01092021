@@ -1,3 +1,11 @@
+.Fonctionnement {
+  @include Fonctionnement;
+  .listing-number {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .card {
   &:hover {
     transform: scale(1.1);
