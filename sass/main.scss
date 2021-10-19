@@ -228,7 +228,7 @@ li {
   height: 6rem;
   display: flex;
   margin: 38px;
-  padding: 20px;
+  padding: 10px;
   &:hover .check-right {
     margin-right: 0;
     opacity: 1;
@@ -278,8 +278,8 @@ li {
     transition-duration: 0.5s;
     transition-timing-function: ease;
     margin-right: -20px;
-    margin-top: -20px;
-    height: 136px;
+    margin-top: -10px;
+    height: 117px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 
@@ -498,5 +498,6 @@ a:visited {
   .full-menus {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
   }
 }
