@@ -12,6 +12,8 @@
 html,
 body {
   font-family: "roboto";
+  margin-left: 0;
+  margin-right: 0;
 }
 /*HEADER*/
 
@@ -49,13 +51,6 @@ body {
 .header {
   display: flex;
   justify-content: center;
-}
-
-.card figcaption .fa-heart {
-  position: relative;
-  color: black;
-  left: 90%;
-  bottom: 15px;
 }
 
 /*LOADER*/
@@ -164,6 +159,12 @@ body {
   box-shadow: 4px 5px 6px #353535;
 }
 
+.listing-number {
+  display: flex;
+  gap: 10%;
+  margin-left: 15px;
+}
+
 .btn-exploration button:hover {
   transform: scale(1.15);
   cursor: pointer;
@@ -182,11 +183,6 @@ body {
 
 .Restaurant-list:hover {
   transform: scale(1.1);
-}
-
-.listing-number {
-  display: flex;
-  justify-content: space-around;
 }
 
 .paragraph {
@@ -355,16 +351,6 @@ li {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.Restaurant {
-  background-color: #f5f5f5;
-  padding: 10px;
-  margin-top: 2%;
-}
-.Cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .card-new {
   background-color: #99e2d0;
   color: green;
@@ -383,6 +369,11 @@ li {
   color: #353535;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .card-subtitle {
   color: #353535;
 }
@@ -391,16 +382,15 @@ li {
   color: black;
 }
 
-.card-content {
-  margin: 10px;
-}
+// .plein .far .fa-heart .fa-2x .vide-heart{
+//   transition: ;
+// }
 
 .card {
-  height: 94%;
+  height: 90%;
   box-shadow: 0 0 16px;
   background-color: #fff;
   border-radius: 15px;
-  margin: 0.5rem;
   width: 92%;
 }
 
@@ -459,41 +449,54 @@ a:visited {
 
 /*RESPONSIVE*/
 
-@media screen and (min-width: 760px) {
-  .listing-number {
+@media screen and (max-width: 760px) {
+  .cards {
     display: flex;
     flex-direction: column;
-    width: 680px;
-    padding: 20px 0 20px;
-    margin-left: 25%;
+  }
+
+  .card {
+    margin: 20px;
+  }
+
+  .listing-number {
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+  }
+
+  .full-menus {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .entree-desc,
+  .maindish-desc,
+  .dessert-desc {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .Restaurant-list {
+    width: 100%;
+  }
+
+  .card-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-content {
+    height: 60px;
   }
 }
-.full-menus {
-  display: flex;
-  flex-direction: column;
-}
 
-.Cards {
-  display: flex;
-  flex-direction: column;
-}
-.entree-desc,
-.maindish-desc,
-.dessert-desc {
-  width: 100%;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.Restaurant-list {
-  margin-top: 25px;
-  width: 42%;
-  margin-left: -10%;
-}
-
-@media screen and (min-width: 1440px) {
-  .full-menus {
-    display: grid;
+@media screen and (max-width: 1440px) {
+  .card-icons {
+    position: relative;
+    bottom: 30px;
   }
 }
