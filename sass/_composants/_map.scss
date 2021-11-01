@@ -1,3 +1,7 @@
+.map-search input {
+  @include map;
+}
+
 .map {
   justify-content: center;
   background-color: #dcdcdc;
@@ -6,8 +10,4 @@
   height: 40px;
   align-items: center;
   box-shadow: inset 0px 3px 3px 0px #c0c0c0;
-}
-
-.map-search input {
-  @include map;
 }

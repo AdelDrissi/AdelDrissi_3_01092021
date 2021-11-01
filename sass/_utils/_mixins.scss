@@ -8,6 +8,12 @@
   box-shadow: inset 0px 3px 3px 0px #c0c0c0;
 }
 
+@mixin exploration {
+  text-align: center;
+  padding: 25px;
+  background-color: #f5f5f5;
+}
+
 @mixin btn-exploration {
   transform: scale(1.15);
   cursor: pointer;
@@ -21,4 +27,49 @@
 
 @mixin btn-form {
   position: relative;
+}
+
+@mixin dish {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 1px #c0c0c0;
+  cursor: pointer;
+  height: 6rem;
+  display: flex;
+  margin: 38px;
+  padding: 10px;
+  &:hover .check-right {
+    margin-right: 0;
+    opacity: 1;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+  }
+
+  &:hover i {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+  }
+}
+
+@mixin check-right {
+  width: 5rem;
+  opacity: 0;
+  background-color: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  margin-right: -20px;
+  margin-top: -10px;
+  height: 117px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  > i {
+    color: #99e2d0;
+    background: white;
+    transition-duration: 0.5s;
+    border-radius: 50%;
+  }
 }
