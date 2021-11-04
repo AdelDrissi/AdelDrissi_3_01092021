@@ -111,9 +111,10 @@
   animation: coeur_plein 200ms ease-in-out;
   display: inline-block;
   opacity: 1;
-  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  -webkit-text-fill-color: #cf64dc;
   font-weight: bold;
+  background: -webkit-gradient(linear, right top, left bottom, from(#e606c8), to(rgba(194, 89, 194, 0.979)));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .card-icons {
@@ -466,8 +467,9 @@ body {
 .btn_explore button {
   background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   color: white;
-  position: absolute;
+  position: relative;
   left: 45%;
+  margin: 10px;
   font-weight: 700;
   padding: 12px 20px;
   border: none;
@@ -565,6 +567,10 @@ a:visited {
   .card {
     margin: 20px;
     margin-left: 30px;
+  }
+
+  .btn_explore button {
+    margin: 10px;
   }
 
   .full-menus {
