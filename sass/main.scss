@@ -303,8 +303,9 @@ body {
     #ff79da
   );
   color: white;
-  position: absolute;
+  position: relative;
   left: 45%;
+  margin: 10px;
   font-weight: 700;
   padding: 12px 20px;
   border: none;
@@ -358,7 +359,6 @@ body {
   color: #353535;
 }
 
-
 .icon-heart {
   color: black;
 }
@@ -404,6 +404,10 @@ a:visited {
   .card {
     margin: 20px;
     margin-left: 30px;
+  }
+
+  .btn_explore button {
+    margin: 10px;
   }
 
   .full-menus {
