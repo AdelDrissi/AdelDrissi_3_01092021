@@ -10,8 +10,16 @@
     #e86edb,
     #ff79da
   );
-  -webkit-text-fill-color: #cf64dc;
   font-weight: bold;
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    from(rgb(230, 6, 200)),
+    to(rgba(243, 146, 243, 0.979))
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .card-icons {
