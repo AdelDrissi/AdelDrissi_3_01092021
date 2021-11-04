@@ -2,24 +2,16 @@
   animation: coeur_plein 200ms ease-in-out;
   display: inline-block;
   opacity: 1;
-  background: -webkit-linear-gradient(
-    to left,
-    #9356dc,
-    #b35cdc,
-    #cf64dc,
-    #e86edb,
-    #ff79da
-  );
   font-weight: bold;
   background: -webkit-gradient(
     linear,
     right top,
     left bottom,
     from(rgb(230, 6, 200)),
-    to(rgba(243, 146, 243, 0.979))
+    to(rgba(194, 89, 194, 0.979))
   );
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .card-icons {
