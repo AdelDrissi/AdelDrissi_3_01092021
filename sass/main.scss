@@ -17,6 +17,7 @@ html,
 body {
   font-family: "roboto", "sans-serif";
   margin: 0;
+  overflow-x: hidden;
 }
 
 /*HEADER*/
@@ -27,6 +28,12 @@ body {
 }
 .title_block {
   margin: 20px;
+}
+
+.fa-arrow-left{
+  position: absolute;
+  left: 1%;
+  top: 4%;
 }
 
 .map {
@@ -148,6 +155,7 @@ body {
 .listing-number {
   display: flex;
   gap: 10%;
+  flex-direction: column;
   margin-left: 5%;
 }
 
@@ -161,8 +169,9 @@ body {
   border-radius: 20px;
   background-color: #f5f5f5;
   padding: 35px;
+  margin: 10px;
   height: 25px;
-  width: 100%;
+  width: 90%;
   display: flex;
   box-shadow: 0.25rem 0.25rem 0.5rem darkgrey;
 }
@@ -198,7 +207,16 @@ body {
 .container{
   background-color: #f5f5f5;
   padding-top: 5px;
-  margin-top: 4%;
+  margin-top: 3%;
+}
+
+.card-content{
+  height: 80px;
+}
+
+.cards {
+  display: grid;
+  gap: 20px;
 }
 
 .dish {
@@ -206,7 +224,7 @@ body {
   border-radius: 20px;
   box-shadow: 5px 5px 5px 1px #c0c0c0;
   cursor: pointer;
-  height: 7rem;
+  height: 6rem;
   display: flex;
   padding-left: 20px;
   margin: 38px;
@@ -233,6 +251,7 @@ body {
       width: 100%;
       max-width: 100%;
       display: flex;
+      overflow: auto;
       flex-direction: column;
       justify-content: space-evenly;
       > * {
@@ -254,7 +273,7 @@ body {
     }
   }
   .check-right {
-    width: 5rem;
+    width: 3rem;
     opacity: 0;
     background-color: #99e2d0;
     display: flex;
@@ -263,7 +282,7 @@ body {
     transition-duration: 0.5s;
     transition-timing-function: ease;
     margin-right: -15px;
-    height: 113px;
+    height: 96px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 
@@ -281,11 +300,6 @@ body {
   padding-top: 10px;
 }
 
-.full-menus {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-  }
-  
 
 .all-menu {
   margin: auto;
@@ -369,12 +383,6 @@ body {
   color: #353535;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
 .card-subtitle {
   color: #353535;
 }
@@ -388,8 +396,8 @@ body {
   box-shadow: 0 0 16px grey;
   background-color: #f2f2f2;
   border-radius: 15px;
-  width: 88%;
-  margin-left: 35px;
+  width: 89%;
+  margin-left: 7%;
 }
 
 .card:hover {
@@ -426,19 +434,20 @@ a:visited {
     margin-left: 45px;
   }
 
+  .card-icons {
+    position: relative;
+    bottom: 30px;
+    left: 0;
+}
+
   .btn_explore button {
     margin: 10px;
-  }
-
-  .cards {
-    display: flex;
-    flex-direction: column;
   }
 
   .listing-number {
     flex-direction: column;
     gap: 20px;
-    width: 90%;
+    width: 100%;
   }
 
   .entree-desc,
@@ -447,18 +456,21 @@ a:visited {
     width: 100%;
     max-width: 100%;
     display: flex;
+    overflow: hidden;
+    white-space: nowrap;
     flex-direction: column;
     justify-content: space-evenly;
-  }
-
-  .full-menus{
-    display: flex;
-    flex-direction: column;
   }
 
   .card-text {
     display: flex;
     flex-direction: column;
+  }
+
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 97%;
   }
 
   .card-content {
@@ -467,25 +479,22 @@ a:visited {
 }
 
 @media screen and (min-width: 1440px) {
-  .full-menus{
+
+  .full-menus {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  }
+  
+  .cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+    grid-template-columns: 1fr 1fr ;
+    width: 100%;
   }
 
   .listing-number {
     flex-direction: row;
     gap: 10%;
     width: 90%;
-  }
-
-  .cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .card-icons {
-    position: relative;
-    bottom: 30px;
   }
 }
 
