@@ -33,7 +33,9 @@ body {
 .fa-arrow-left{
   position: absolute;
   left: 1%;
-  top: 4%;
+  top: 7%;
+  font-size: smaller;
+  color: black;
 }
 
 .map {
@@ -178,6 +180,8 @@ body {
 
 .Restaurant-list:hover {
   transform: scale(1.1);
+  background-color: #ae80e5;
+  opacity: 0.60;
 }
 
 .paragraph {
