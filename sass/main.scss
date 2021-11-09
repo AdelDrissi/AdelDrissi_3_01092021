@@ -485,7 +485,8 @@ a:visited {
 }
 
   .btn_explore button {
-    margin: 10px;
+    position: relative;
+    left: 42%;
   }
 
   .listing-number {
@@ -527,6 +528,11 @@ a:visited {
   .full-menus {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  }
+
+  .btn_explore_button{
+    position: relative;
+    left: 45%;
   }
   
   .cards{
