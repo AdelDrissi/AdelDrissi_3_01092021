@@ -39,7 +39,7 @@
 
 .card figcaption .fa-heart {
   position: relative;
-  color: black;
+  color: #cf64dc;
   left: 90%;
   bottom: 15px;
 }
@@ -114,9 +114,20 @@
   display: inline-block;
   opacity: 1;
   font-weight: bold;
-  background: -webkit-gradient(linear, right top, left bottom, from(#e606c8), to(rgba(194, 89, 194, 0.979)));
+  background: -webkit-gradient(linear, right top, left bottom, from(#cf64dc), to(#cf64dc));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+.plein:hover > .bord {
+  animation: coeur_plein 200ms ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, from(#cf64dc), to(#cf64dc));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition-duration: 2s;
 }
 
 .card-icons {
@@ -391,7 +402,7 @@ body {
   height: 6rem;
   display: flex;
   padding-left: 20px;
-  margin: 38px;
+  margin: 30px 10px 30px 10px;
 }
 .dish:hover .check-right {
   margin-right: 0;
@@ -606,6 +617,24 @@ a:visited {
     position: relative;
     bottom: 30px;
     left: 0;
+  }
+  .card-icons > i {
+    position: absolute;
+  }
+  .card-icons .bord {
+    transition-duration: 0.5s;
+  }
+  .card-icons:hover > .bord {
+    font-weight: bold;
+    background: -webkit-gradient(linear, left top, left bottom, from(#cf64dc), to(#cf64dc));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition-duration: 2s;
+  }
+  .card-icons:hover > .fill {
+    background: -webkit-gradient(linear, left top, left bottom, from(#cf64dc), to(#cf64dc));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
 
   .btn_explore button {
