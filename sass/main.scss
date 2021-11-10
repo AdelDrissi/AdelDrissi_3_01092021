@@ -33,9 +33,13 @@ body {
 .fa-arrow-left{
   position: absolute;
   left: 1%;
-  top: 7%;
+  top: 4%;
   font-size: smaller;
   color: black;
+}
+
+.width-logo{
+  width: 60%;
 }
 
 .map {
@@ -267,7 +271,8 @@ body {
     }
 
     .entree-price,
-    .dessert-price {
+    .dessert-price,
+    .maindish-price {
       display: flex;
       align-items: flex-end;
       max-width: 100%;
@@ -432,7 +437,7 @@ a:visited {
 
 /*RESPONSIVE*/
 
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 660px) {
   .card {
     margin: 20px;
     margin-left: 45px;
