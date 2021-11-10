@@ -39,8 +39,8 @@
 
 .card figcaption .fa-heart {
   position: relative;
-  color: #cf64dc;
   left: 90%;
+  color: black;
   bottom: 15px;
 }
 
@@ -107,27 +107,6 @@
 
 .card-new {
   position: relative;
-}
-
-.plein:hover {
-  animation: coeur_plein 200ms ease-in-out;
-  display: inline-block;
-  opacity: 1;
-  font-weight: bold;
-  background: -webkit-gradient(linear, right top, left bottom, from(#cf64dc), to(#cf64dc));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
-.plein:hover > .bord {
-  animation: coeur_plein 200ms ease-in-out;
-  display: inline-block;
-  opacity: 1;
-  font-weight: bold;
-  background: -webkit-gradient(linear, left top, left bottom, from(#cf64dc), to(#cf64dc));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  transition-duration: 2s;
 }
 
 .card-icons {
@@ -621,20 +600,19 @@ a:visited {
   .card-icons > i {
     position: absolute;
   }
+  .card-icons .fill {
+    transition-duration: 0.5s;
+  }
   .card-icons .bord {
     transition-duration: 0.5s;
   }
-  .card-icons:hover > .bord {
+
+  .bord:hover {
     font-weight: bold;
-    background: -webkit-gradient(linear, left top, left bottom, from(#cf64dc), to(#cf64dc));
-    -webkit-text-fill-color: transparent;
+    background: -webkit-gradient(linear, left top, right top, from(#cf64dc), to(#cf64dc));
+    background: -webkit-gradient(linear, left top, left bottom, from(#eb0bcd), to(#333));
     -webkit-background-clip: text;
-    transition-duration: 2s;
-  }
-  .card-icons:hover > .fill {
-    background: -webkit-gradient(linear, left top, left bottom, from(#cf64dc), to(#cf64dc));
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
   }
 
   .btn_explore button {

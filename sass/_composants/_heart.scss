@@ -1,35 +1,41 @@
-.plein:hover {
-  animation: coeur_plein 200ms ease-in-out;
-  display: inline-block;
-  opacity: 1;
-  font-weight: bold;
-  background: -webkit-gradient(
-    linear,
-    right top,
-    left bottom,
-    from(#cf64dc),
-    to(#cf64dc)
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
+// .plein:hover > .fill {
+//   // animation: coeur_plein 200ms ease-in-out;
+//   // display: inline-block;
+//   // opacity: 1;
+//   // font-weight: bold;
+//   // background: -webkit-gradient(
+//   //   linear,
+//   //   right top,
+//   //   left bottom,
+//   //   from(#cf64dc),
+//   //   to(#cf64dc)
+//   // );
+//   // -webkit-text-fill-color: transparent;
+//   // -webkit-background-clip: text;
+// //   background: -webkit-gradient(linear, left top, left bottom, from(#f00), to(#333));
+// // 	-webkit-background-clip: text;
+// // 	-webkit-text-fill-color: transparent;
+// // }
 
-.plein:hover > .bord{
-  animation: coeur_plein 200ms ease-in-out;
-  display: inline-block;
-  opacity: 1;
-  font-weight: bold;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#cf64dc),
-    to(#cf64dc)
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  transition-duration: 2s;
-}
+// .plein:hover > .bord{
+//   // animation: coeur_plein 200ms ease-in-out;
+//   // display: inline-block;
+//   // opacity: 1;
+//   // font-weight: bold;
+//   // background: -webkit-gradient(
+//   //   linear,
+//   //   left top,
+//   //   left bottom,
+//   //   from(#cf64dc),
+//   //   to(#cf64dc)
+//   // );
+//   // -webkit-text-fill-color: transparent;
+//   // -webkit-background-clip: text;
+//   // transition-duration: 2s;
+//   background: -webkit-gradient(linear, left top, left bottom, from(#f00), to(#333));
+// 	-webkit-background-clip: text;
+// 	-webkit-text-fill-color: transparent;
+// }
 
 .card-icons {
     position: relative;

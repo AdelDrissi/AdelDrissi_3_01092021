@@ -448,41 +448,46 @@ a:visited {
       position: absolute;
 
     }
-    // .fill {
-    // transition-duration: 0.5s;
-    // }
+    .fill {
+    transition-duration: 0.5s;
+    }
     
     .bord {
     transition-duration: 0.5s;
     }
+  }
 
-    &:hover > .bord {
+    .bord:hover {
       font-weight: bold;
       background: -webkit-gradient(
       linear,
       left top,
-      left bottom,
+      right top,
       from(#cf64dc),
       to(#cf64dc)
       );
-      -webkit-text-fill-color: transparent;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgb(235, 11, 205)), to(#333));
       -webkit-background-clip: text;
-      transition-duration:  2s;
-      }
-
-
-    &:hover > .fill {
-      background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(#cf64dc),
-      to(#cf64dc)
-      );
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent
     }
-}
+
+
+    // &:hover > .fill {
+    //   animation: coeur_plein 200ms ease-in-out;
+    //   display: inline-block;
+    //   opacity: 1;
+    //   font-weight: bold;
+    //   background: -webkit-gradient(
+    //   linear,
+    //   left top,
+    //   left bottom,
+    //   from(#cf64dc),
+    //   to(#cf64dc)
+    //   );
+    //   background: -webkit-gradient(linear, left top, left bottom, from(#f00), to(#333));
+    //   -webkit-background-clip: text;
+    //   -webkit-text-fill-color: transparent;
+    // }
 
   .btn_explore button {
     position: relative;
