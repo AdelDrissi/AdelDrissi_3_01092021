@@ -224,6 +224,44 @@ body {
 }
 
 
+.bord {
+  color: black;
+  cursor: pointer;
+  &:hover {
+    animation: fill 0.3s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-weight: bold;
+  }
+}
+    
+    // .bord {
+    // color: #cf64dc;
+    // transition-duration: 1s;
+    // }
+
+    // .bord:hover {
+    //   font-weight: bold;
+    //   background: -webkit-gradient(
+    //   linear,
+    //   left bottom,
+    //   right top,
+    //   from(#cf64dc),
+    //   to(#c004ff)
+    //   );
+    //   opacity: 1;
+    //   background: -webkit-gradient(linear, left top, left bottom, from(rgb(235, 11, 205)), to(rgb(192, 4, 4)));
+    //   -webkit-background-clip: text;
+    //   -webkit-text-fill-color: #cf64dc;
+    // }
+
+    
+
+
 .dish {
   background-color: white;
   border-radius: 20px;
@@ -443,51 +481,7 @@ a:visited {
     position: relative;
     bottom: 30px;
     left: 0;
-
-    > i{
-      position: absolute;
-
-    }
-    .fill {
-    transition-duration: 0.5s;
-    }
-    
-    .bord {
-    transition-duration: 0.5s;
-    }
-  }
-
-    .bord:hover {
-      font-weight: bold;
-      background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#cf64dc),
-      to(#cf64dc)
-      );
-      background: -webkit-gradient(linear, left top, left bottom, from(rgb(235, 11, 205)), to(#333));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent
-    }
-
-
-    // &:hover > .fill {
-    //   animation: coeur_plein 200ms ease-in-out;
-    //   display: inline-block;
-    //   opacity: 1;
-    //   font-weight: bold;
-    //   background: -webkit-gradient(
-    //   linear,
-    //   left top,
-    //   left bottom,
-    //   from(#cf64dc),
-    //   to(#cf64dc)
-    //   );
-    //   background: -webkit-gradient(linear, left top, left bottom, from(#f00), to(#333));
-    //   -webkit-background-clip: text;
-    //   -webkit-text-fill-color: transparent;
-    // }
+  } 
 
   .btn_explore button {
     position: relative;
