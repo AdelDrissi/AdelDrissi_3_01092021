@@ -39,9 +39,7 @@
 
 .card figcaption .fa-heart {
   position: relative;
-  left: 90%;
   color: black;
-  bottom: 15px;
 }
 
 .card:hover {
@@ -110,9 +108,9 @@
 }
 
 .card-icons {
-  position: relative;
-  bottom: 30px;
-  left: 0;
+  position: absolute;
+  width: 36px;
+  height: 36px;
 }
 
 .loader {
@@ -373,6 +371,10 @@ body {
   gap: 20px;
 }
 
+.fa-heart {
+  position: absolute;
+}
+
 .bord {
   color: black;
   cursor: pointer;
@@ -381,7 +383,7 @@ body {
   animation: fill 0.3s ease-in-out;
   display: inline-block;
   opacity: 1;
-  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: linear-gradient(to right, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -605,12 +607,6 @@ a:visited {
   .card {
     margin: 20px;
     margin-left: 45px;
-  }
-
-  .card-icons {
-    position: relative;
-    bottom: 30px;
-    left: 0;
   }
 
   .btn_explore button {
