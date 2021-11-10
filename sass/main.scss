@@ -172,6 +172,7 @@ body {
   background-color: #f5f5f5;
   padding: 35px;
   margin: 10px;
+  align-items: center;
   height: 25px;
   width: 90%;
   display: flex;
@@ -199,7 +200,6 @@ body {
   padding: 4px 9px;
   margin-right: 10%;
   margin-left: -35px;
-  margin-top: -8px;
 }
 
 .icon {
@@ -217,7 +217,7 @@ body {
 .card-content{
   height: 80px;
 }
-
+  
 .cards {
   display: grid;
   gap: 20px;
@@ -342,7 +342,7 @@ body {
   );
   color: white;
   position: relative;
-  left: 45%;
+  left: 40%;
   margin: 10px;
   font-weight: 700;
   padding: 12px 20px;
@@ -438,17 +438,6 @@ a:visited {
     margin-left: 45px;
   }
 
-  // .card-icons {
-  //   position: relative;
-  //   bottom: 30px;
-  //   left: 0;
-  // } 
-
-  .btn_explore button {
-    position: relative;
-    left: 42%;
-  }
-
   .listing-number {
     flex-direction: column;
     gap: 20px;
@@ -490,7 +479,7 @@ a:visited {
   grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
   }
 
-  .btn_explore_button{
+  .btn_explore button {
     position: relative;
     left: 45%;
   }

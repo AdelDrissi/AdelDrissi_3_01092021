@@ -1,6 +1,4 @@
 
-
-
     .fa-heart{
     position: absolute;
     right: 1rem;
@@ -12,30 +10,29 @@
     &:hover {
         animation: fill 0.3s ease-in-out;
         display: inline-block;
-        opacity: 3;
-        background:linear-gradient(to right, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-        background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+        opacity: 1;
+        background: #ff79da;
+        transition-duration: 1s;
         -webkit-background-clip: text;
         -webkit-text-fill-color:transparent;
         font-weight: bold;
     }
     }
 
-        .fill {
-    color: black;
+    .fill {
     cursor: pointer;
     &:hover {
         animation: fill 0.3s ease-in-out;
         display: inline-block;
-        opacity: 3;
-        background:linear-gradient(to right, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-        background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+        opacity: 1;
+        background: #ff79da;
+        transition-duration: 1s;
         -webkit-background-clip: text;
         -webkit-text-fill-color:transparent;
         font-weight: bold;
+        
     }
     }
-
 
     .card-icons {
         position: absolute;
