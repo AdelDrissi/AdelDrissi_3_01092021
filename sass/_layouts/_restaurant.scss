@@ -9,9 +9,10 @@
   padding-bottom: 20px;
 }
 
+
 .card figcaption {
+  position: relative;
   & .fa-heart  {
-    position: relative;
     color: black;
   }
 }
