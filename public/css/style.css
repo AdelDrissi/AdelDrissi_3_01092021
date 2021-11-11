@@ -116,32 +116,33 @@
 }
 
 .bord {
-  color: black;
   cursor: pointer;
+  background: linear-gradient(white, rgba(252, 14, 14, 0));
 }
 .bord:hover {
   animation: fill 0.3s ease-in-out;
   display: inline-block;
   opacity: 1;
-  background: #ff79da;
-  transition-duration: 1s;
+  background-color: #ff00b7;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  transition-duration: 2s;
 }
 
 .fill {
   cursor: pointer;
+  background: linear-gradient(white, rgba(252, 14, 14, 0));
 }
 .fill:hover {
   animation: fill 0.3s ease-in-out;
   display: inline-block;
   opacity: 1;
-  background: #ff79da;
-  transition-duration: 1s;
+  background-color: #ff00b7;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  transition-duration: 1s;
 }
 
 .card-icons {
