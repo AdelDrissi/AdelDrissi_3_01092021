@@ -110,47 +110,37 @@
   position: relative;
 }
 
-.fa-heart {
-  position: absolute;
-  right: 1rem;
-}
-
-.bord {
-  cursor: pointer;
-  background: linear-gradient(white, rgba(252, 14, 14, 0));
-}
-.bord:hover {
-  animation: fill 0.3s ease-in-out;
-  display: inline-block;
-  opacity: 1;
-  background-color: #ff00b7;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  transition-duration: 2s;
-}
-
-.fill {
-  cursor: pointer;
-  background: linear-gradient(white, rgba(252, 14, 14, 0));
-}
-.fill:hover {
-  animation: fill 0.3s ease-in-out;
-  display: inline-block;
-  opacity: 1;
-  background-color: #ff00b7;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  transition-duration: 1s;
-}
-
 .card-icons {
   position: absolute;
   width: 36px;
   height: 36px;
   top: 10px;
   right: 10px;
+}
+.card-icons > i {
+  font-size: 2rem;
+  position: absolute;
+  padding: 0.5rem;
+}
+.card-icons .fill {
+  opacity: 0;
+  transition-duration: 500ms;
+}
+.card-icons .bord {
+  transition-duration: 500ms;
+}
+.card-icons:hover > .bord {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition-duration: 500ms;
+}
+.card-icons:hover > .fill {
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition-duration: 500ms;
 }
 
 .loader {
