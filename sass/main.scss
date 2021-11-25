@@ -52,6 +52,10 @@ body {
   box-shadow: inset 0px 3px 3px 0px #c0c0c0;
 }
 
+.title-h2{
+  margin-left: 15px;
+}
+
 .map-search input {
   justify-content: center;
   background-color: #dcdcdc;
@@ -241,6 +245,7 @@ body {
     opacity: 1;
     transition-duration: 0.5s;
     transition-timing-function: ease;
+    
   }
 
   &:hover i {
@@ -300,6 +305,8 @@ body {
       background: white;
       transition-duration: 0.5s;
       border-radius: 50%;
+      height: 15px;
+      width: 15px;
     }
   }
 }
@@ -464,12 +471,15 @@ a:visited {
   .card-text {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    left: 0%;
   }
 
   .cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 97%;
+    margin-left: 1%;
   }
 
   .card-content {
@@ -492,7 +502,7 @@ a:visited {
   .cards{
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    width: 100%;
+    width: 98%;
   }
 
   .listing-number {
