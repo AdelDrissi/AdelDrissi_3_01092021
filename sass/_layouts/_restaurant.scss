@@ -12,8 +12,12 @@
 
 .card figcaption {
   position: relative;
+  left: 1%;
   & .fa-heart  {
     color: black;
+    position: absolute;
+    left: 2rem;
+    top: -55%;
   }
 }
 
