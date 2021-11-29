@@ -116,7 +116,7 @@
 
 .card-icons {
   position: absolute;
-  width: 36px;
+  width: 25px;
   height: 36px;
   top: 38px;
   right: 25px;
@@ -238,10 +238,6 @@ body {
   height: 40px;
   align-items: center;
   box-shadow: inset 0px 3px 3px 0px #c0c0c0;
-}
-
-.title-h2 {
-  margin-left: 15px;
 }
 
 .map-search input {
@@ -687,7 +683,7 @@ a:visited {
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 94%;
+    width: 98%;
   }
 
   .listing-number {
