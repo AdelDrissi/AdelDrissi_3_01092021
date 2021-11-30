@@ -423,7 +423,7 @@ body {
 }
 .dish:hover .check-right {
   margin-right: 0;
-  transition-duration: 0.5s;
+  transition-duration: 1.5s;
   transition-timing-function: ease;
 }
 .dish:hover i {
@@ -435,6 +435,7 @@ body {
 .dish .dessert-menus {
   width: 100%;
   max-width: 100%;
+  overflow: hidden;
   display: flex;
 }
 .dish .entree .entree-desc,
@@ -484,12 +485,12 @@ body {
   right: 50%;
 }
 .dish .check-right {
-  width: 6rem;
+  width: 3rem;
   background-color: #99e2d0;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-duration: 0.5s;
+  transition-duration: 1.5s;
   transition-timing-function: ease;
   margin-right: -6rem;
   height: 96px;
@@ -499,7 +500,7 @@ body {
 .dish .check-right > i {
   color: #99e2d0;
   background: white;
-  transition-duration: 0.5s;
+  transition-duration: 1.5s;
   border-radius: 50%;
   height: 15px;
   width: 15px;
