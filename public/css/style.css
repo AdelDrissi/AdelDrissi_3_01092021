@@ -436,6 +436,7 @@ body {
   width: 100%;
   max-width: 100%;
   display: flex;
+  overflow: hidden;
 }
 .dish .entree .entree-desc,
 .dish .entree .dessert-desc,
