@@ -236,9 +236,10 @@ body {
   display: flex;
   padding-left: 20px;
   margin: 30px 10px 30px 10px;
+  overflow: hidden;
+  max-width: 100%;
   &:hover .check-right {
     margin-right: 0;
-    opacity: 1;
     transition-duration: 0.5s;
     transition-timing-function: ease;
     
@@ -260,7 +261,7 @@ body {
       width: 100%;
       max-width: 100%;
       display: flex;
-      overflow: auto;
+      overflow: hidden;
       flex-direction: column;
       justify-content: space-evenly;
       > * {
@@ -283,15 +284,14 @@ body {
     }
   }
   .check-right {
-    width: 3rem;
-    opacity: 0;
+    width: 6rem;
     background-color: #99e2d0;
     display: flex;
     justify-content: center;
     align-items: center;
     transition-duration: 0.5s;
     transition-timing-function: ease;
-    margin-right: -15px;
+    margin-right: -6rem;
     height: 96px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
