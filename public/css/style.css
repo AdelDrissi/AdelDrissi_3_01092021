@@ -319,6 +319,22 @@ body {
   animation: fadeInAnimation ease 4s;
 }
 
+.btn_explore button {
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  color: white;
+  position: relative;
+  left: 35%;
+  margin: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 12px 20px;
+  border: none;
+  transform: scale(1);
+  transition: transform 400ms;
+  box-shadow: inset 0px 0px 1px 0px #c0c0c0;
+  border-radius: 20px;
+}
+
 .exploration {
   text-align: center;
   padding: 25px;
@@ -537,22 +553,6 @@ body {
     opacity: 1;
   }
 }
-.btn_explore button {
-  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  color: white;
-  position: relative;
-  left: 40%;
-  margin: 10px;
-  cursor: pointer;
-  font-weight: 700;
-  padding: 12px 20px;
-  border: none;
-  transform: scale(1);
-  transition: transform 400ms;
-  box-shadow: inset 0px 0px 1px 0px #c0c0c0;
-  border-radius: 20px;
-}
-
 .btn_explore button:hover {
   background-color: #ae80e5;
   background-blend-mode: lighten;
@@ -643,6 +643,22 @@ a:visited {
     width: 100%;
   }
 
+  .btn_explore button {
+    background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    color: white;
+    position: relative;
+    left: 45%;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 12px 20px;
+    border: none;
+    transform: scale(1);
+    transition: transform 400ms;
+    box-shadow: inset 0px 0px 1px 0px #c0c0c0;
+    border-radius: 20px;
+  }
+
   .entree-desc,
 .maindish-desc,
 .dessert-desc {
@@ -677,11 +693,6 @@ a:visited {
   .full-menus {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-  }
-
-  .btn_explore button {
-    position: relative;
-    left: 45%;
   }
 
   .cards {
